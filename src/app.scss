@@ -5,10 +5,11 @@
 
     .sections {
         width: 100%;
-        height: calc(100vh - #{$navbarHeight});
+        // height: calc(100vh - #{$navbarHeight});
+        height: 100vh;
         background-color: chartreuse;
-        position: relative;
-        top: $navbarHeight;
+        // position: relative;
+        // top: $navbarHeight;
 
         scroll-behavior: smooth; 
         scroll-snap-type: y mandatory;
@@ -19,7 +20,8 @@
 
         > * {
             width: 100%;
-            height: calc(100vh - #{$navbarHeight});
+            // height: calc(100vh - #{$navbarHeight});
+            height: 100vh;
             scroll-snap-align: start;
         }
     }

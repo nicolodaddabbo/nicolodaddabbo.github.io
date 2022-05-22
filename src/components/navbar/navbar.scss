@@ -3,7 +3,7 @@
 .navbar {
     width: 100%;
     height: $navbarHeight;
-    background-color: white;
+    // background-color: white;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -28,7 +28,7 @@
             }
 
             .logo:hover {
-                color: $yellow;
+                color: $purple;
                 transition: color 0.3s ease-in-out;
             }
         }
@@ -87,5 +87,11 @@
             }
         }
 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar {
+        display: none;
     }
 }
