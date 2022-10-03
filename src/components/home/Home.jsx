@@ -1,7 +1,7 @@
 import "./home.scss"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
-import Intro from '../intro/Intro'
 import HeroHome from "../heroHome/HeroHome";
+import Intro from "../intro/Intro";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
           <HeroHome/>
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.5}>
-          <Intro />
+          <Intro/>
         </ParallaxLayer>
       </Parallax> 
     </div>

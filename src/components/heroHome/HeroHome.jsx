@@ -1,8 +1,6 @@
 import BigText from "../bigText/BigText"
 import "./heroHome.scss"
 
-const freelanceArray = ["Full-Stack Developer", "Web Designer", "Web Developer", "Web Designer"]
-
 export default function HeroHome() {
 
     return (
@@ -21,6 +19,27 @@ export default function HeroHome() {
                     animationType={"blocks"}
                     tag={"h1"}
                     className={"heroTitle"}
+                />
+                <BigText
+                    text="Web Developer"
+                    duration={1}
+                    animationType={"blocks"}
+                    tag={"h1"}
+                    className={"heroTitleUppercase"}
+                />
+                <BigText
+                    text="Full-Stack Developer"
+                    duration={1}
+                    animationType={"blocks"}
+                    tag={"h1"}
+                    className={"heroTitleUppercase"}
+                />
+                <BigText
+                    text="Web Designer"
+                    duration={1}
+                    animationType={"blocks"}
+                    tag={"h1"}
+                    className={"heroTitleUppercase"}
                 />
             </div>
             
