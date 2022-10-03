@@ -1,0 +1,12 @@
+@import "../../variables";
+
+#home {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-color: $background;
+}
+
+.heroSection {
+    background-color: $hero-background;
+}
