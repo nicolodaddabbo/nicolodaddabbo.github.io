@@ -9,9 +9,13 @@ export default function Home() {
       <Parallax pages={4}>
         <ParallaxLayer speed={1} className="heroSection">
           <HeroHome/>
+          {/* <Intro/> */}
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.5}>
+        <ParallaxLayer offset={1} speed={0.5} factor={2} className="introSection">
           <Intro/>
+        </ParallaxLayer>
+        <ParallaxLayer offset={3} speed={0.2} factor={1} className="portfolioSection">
+          <div>TEST</div>
         </ParallaxLayer>
       </Parallax> 
     </div>
