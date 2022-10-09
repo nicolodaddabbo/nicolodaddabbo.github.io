@@ -1,0 +1,35 @@
+@import "../../variables";
+
+#projectsContainer {
+    div {
+        overflow-x: visible;
+    }
+
+    .mainTitle {
+        height: 10vh;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: $h1-size;
+        color: $color-1;
+        padding-left: 20px;
+        padding-top: 2px;
+        overflow: hidden;
+    }
+
+    .rightArrow {
+        position: absolute;
+        font-size: 40px;
+        right: 5%;
+        top: 50%;
+        cursor: pointer;
+    }
+
+    .leftArrow {
+        position: absolute;
+        font-size: 40px;
+        left: 5%;
+        top: 50%;
+        cursor: pointer;
+    }
+}
