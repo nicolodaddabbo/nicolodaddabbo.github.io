@@ -1,14 +1,14 @@
 @import "../../variables";
 
 .projectWrapper {
-    height: 90vh;
+    height: 140vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .textSection {
-        width: 35%;
+        width: 40%;
         border: 6px solid $color-1;
         box-shadow: 10px 10px;
         background-color: $color-2;
