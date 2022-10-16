@@ -12,22 +12,22 @@ export default function Home() {
 
   return (
     <div id="home">
-      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Parallax pages={5}>
         <ParallaxLayer speed={1} className="heroSection">
-          <HeroHome/>
+          <HeroHome />
         </ParallaxLayer>
         <ParallaxLayer offset={1} speed={0.4} factor={2} className="introSection">
-          <Intro/>
+          <Intro />
         </ParallaxLayer>
         <ParallaxLayer offset={2.5} speed={1} factor={1.5} className="portfolioSection">
-          <Projects/>
+          <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={4} speed={4} factor={1} className="portfolioSection">
+        <ParallaxLayer offset={4.5} >
           <div>test</div>
         </ParallaxLayer>
-      </Parallax> 
+      </Parallax>
     </div>
   )
 }

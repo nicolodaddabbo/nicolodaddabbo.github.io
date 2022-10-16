@@ -46,7 +46,7 @@ export default function Projects() {
     }
 
     return (
-        <div id='projectsContainer'>
+        <div id='projects'>
             <h1 className='mainTitle'>PROGETTI</h1>
             <SwipeableViews enableMouseEvents index={index}>
                 { projects.map((project, id) => (

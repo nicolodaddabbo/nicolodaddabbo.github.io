@@ -59,7 +59,7 @@ export default function HeroHome() {
         //     </div>
 
         // </div>
-        <div className='heroHome' id='heroHome'>
+        <div className='heroHome' id='intro'>
             <div className="left">
                 <div className="imgContainer">
                     <div className="imgCircle">
