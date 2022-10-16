@@ -3,10 +3,17 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import HeroHome from "../heroHome/HeroHome";
 import Intro from "../intro/Intro";
 import Projects from "../projects/Projects";
+import Navbar from "../navbar/Navbar";
+import Menu from "../menu/Menu";
+import { useState } from "react";
 
 export default function Home() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div id="home">
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Parallax pages={5}>
         <ParallaxLayer speed={1} className="heroSection">
           <HeroHome/>
