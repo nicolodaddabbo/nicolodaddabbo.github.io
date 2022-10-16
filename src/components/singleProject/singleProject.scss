@@ -13,11 +13,18 @@
     background-color: $color-2;
     border: 6px solid $color-1;
     box-shadow: 10px 10px;
-    height: 100%;
+    height: auto;
     width: 80%;
     margin-left: 10%;
     margin-top: 3%;
     position: relative;
+
+    .modalClose {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
 
     .slider {
         width: 100%;
@@ -25,8 +32,6 @@
 
         display: flex;
         justify-content: center;
-        position: absolute;
-        bottom: 5%;
 
         .react-swipeable-view-container {
             div {
@@ -43,13 +48,25 @@ h1 {
 
 .modalBody {
     padding: 0 5% 5% 5%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .display-block {
     display: block;
+    // height: 80%;
+    // -webkit-transition: height 0.5s linear;
+    // -moz-transition: height 0.5s linear;
+    // -ms-transition: height 0.5s linear;
+    // -o-transition: height 0.5s linear;
+    // transition: height 0.5s linear;
 }
 
 .display-none {
     display: none;
+    // height: 0px;
+    // -webkit-transition: height 0.5s linear;
+    // -moz-transition: height 0.5s linear;
+    // -ms-transition: height 0.5s linear;
+    // -o-transition: height 0.5s linear;
+    // transition: height 0.5s linear;
 }

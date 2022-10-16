@@ -2,6 +2,7 @@ import './singleProject.scss'
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutlined';
 import SwipeableViews from 'react-swipeable-views/lib/SwipeableViews'
+import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react'
 
 
@@ -38,7 +39,9 @@ export default function SingleProject({ handleClose, show, index, project }) {
                 <div className='modalBody'>
                     {project.body}
                 </div>
-                <button onClick={handleClose}>CLOSE</button>
+                <div className='modalClose' onClick={handleClose}>
+                    <CloseIcon style={{fontSize : '50px'}}/>    
+                </div>
                 <div className="slider">
                     <SwipeableViews enableMouseEvents index={slideIndex}>
                         {project.images.map((imgUrl, id) => (

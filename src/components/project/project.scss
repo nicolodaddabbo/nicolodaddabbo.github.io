@@ -31,10 +31,36 @@
 
     .imgSection {
         height: 0;
-        padding: 0; /* remove any pre-existing padding, just in case */
-        padding-bottom: 30%; /* for a 4:3 aspect ratio */
+        padding: 0;
+        /* remove any pre-existing padding, just in case */
+        padding-bottom: 30%;
+        /* for a 4:3 aspect ratio */
         background-size: 100%;
         background-position: center center;
         background-repeat: no-repeat;
+    }
+}
+
+.display-none-not-modal {
+    .textSection {
+        border: none;
+        box-shadow: none;
+        background-color: transparent;
+    }
+
+    .imgSection {
+        display: none;
+    }
+
+    .buttonScopri {
+        display: none !important;
+    }
+
+    .projectTitle {
+        display: none;
+    }
+
+    .projectIntro {
+        display: none;
     }
 }
