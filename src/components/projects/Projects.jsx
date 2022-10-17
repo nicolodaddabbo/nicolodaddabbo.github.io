@@ -4,6 +4,7 @@ import './projects.scss'
 import { useState } from 'react'
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import React from 'react'
 
 export default function Projects() {
     const [index, setIndex] = useState(0)

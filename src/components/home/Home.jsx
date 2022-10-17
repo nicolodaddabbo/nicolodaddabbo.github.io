@@ -6,6 +6,7 @@ import Projects from "../projects/Projects";
 import Navbar from "../navbar/Navbar";
 import Menu from "../menu/Menu";
 import { useState } from "react";
+import React from 'react'
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);

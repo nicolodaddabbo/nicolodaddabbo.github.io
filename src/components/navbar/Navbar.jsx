@@ -1,4 +1,5 @@
 import "./navbar.scss"
+import React from 'react'
 
 export default function Navbar({ menuOpen, setMenuOpen }) {
   return (

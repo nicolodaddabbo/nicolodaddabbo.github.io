@@ -4,6 +4,7 @@ import ArrowCircleLeftOutlinedIcon from '@mui/icons-material/ArrowCircleLeftOutl
 import SwipeableViews from 'react-swipeable-views/lib/SwipeableViews'
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react'
+import React from 'react'
 
 
 export default function SingleProject({ handleClose, show, index, project }) {

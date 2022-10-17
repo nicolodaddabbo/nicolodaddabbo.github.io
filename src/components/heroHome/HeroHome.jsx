@@ -1,5 +1,6 @@
 // import BigText from "../bigText/BigText"
 import "./heroHome.scss"
+import React from 'react'
 
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import InstagramIcon from '@material-ui/icons/Instagram';
