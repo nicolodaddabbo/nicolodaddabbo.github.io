@@ -7,6 +7,7 @@ import Navbar from "../navbar/Navbar";
 import Menu from "../menu/Menu";
 import { useRef, useState } from "react";
 import React from 'react'
+import Contact from "../contact/Contact";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,6 +21,10 @@ export default function Home() {
     ref.current.scrollTo(2.2)
   }
 
+  const scrollToContact = () => {
+    ref.current.scrollTo(4)
+  }
+
   return (
     <div id="home">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
@@ -28,8 +33,9 @@ export default function Home() {
         setMenuOpen={setMenuOpen} 
         scrollToHome={scrollToHome} 
         scrollToProjects={scrollToProjects}
+        scrollToContact={scrollToContact}
       />
-      <Parallax pages={5} ref={ref}>
+      <Parallax pages={4.5} ref={ref}>
         <ParallaxLayer speed={1} className="heroSection">
           <HeroHome />
         </ParallaxLayer>
@@ -39,8 +45,8 @@ export default function Home() {
         <ParallaxLayer offset={2.5} speed={1} factor={1.5} className="portfolioSection">
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.5} >
-          <div>test</div>
+        <ParallaxLayer offset={3.5} speed={0} factor={1} className="contactSection">
+          <Contact />
         </ParallaxLayer>
       </Parallax>
     </div>

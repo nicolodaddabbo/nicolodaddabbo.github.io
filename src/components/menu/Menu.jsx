@@ -1,7 +1,7 @@
 import "./menu.scss"
 import React from 'react'
 
-export default function Menu({ menuOpen, setMenuOpen, scrollToHome, scrollToProjects }) {
+export default function Menu({ menuOpen, setMenuOpen, scrollToHome, scrollToProjects, scrollToContact }) {
   return (
     <div className={"menu " + (menuOpen && "active")} onClick={() => setMenuOpen(false)}>
         <ul>
@@ -12,7 +12,7 @@ export default function Menu({ menuOpen, setMenuOpen, scrollToHome, scrollToProj
                 <span onClick={scrollToProjects}>Projects</span>
             </li>
             <li>
-                <span href="#contact">Contact</span>
+                <span onClick={scrollToContact}>Contact</span>
             </li>   
         </ul>
     </div>

@@ -1,5 +1,53 @@
 @import "../../variables";
 
-.contact {
-    background-color: $purple;
+#contact {
+    height: 100%;
+    display: block;
+    padding-top: 2%;
+
+    .contactHeader {
+        height: 10%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        p {
+            // font-family: 'Poppins', sans-serif; 
+            font-weight: 700;
+            text-transform: uppercase;   
+            font-size: 15pt;
+        }
+    }
+
+    .contactEmail {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .bigEmail {
+            text-decoration: none;
+            color: $color-1;
+            text-transform: uppercase;
+            font-size: 50pt;
+            font-weight: 700;
+            font-family: 'Poppins';
+            line-height: 1;
+
+            .at {
+                color: $color-3;
+                font-size: 60pt;
+            }
+
+            .dot {
+                color: $color-3;
+                font-size: 80pt;
+            }
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: $color-3;
+            }
+        }
+    }
 }
