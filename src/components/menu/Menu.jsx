@@ -1,19 +1,19 @@
 import "./menu.scss"
 import React from 'react'
 
-export default function Menu({ menuOpen, setMenuOpen }) {
+export default function Menu({ menuOpen, setMenuOpen, scrollToHome, scrollToProjects }) {
   return (
-    <div className={"menu " + (menuOpen && "active")}>
+    <div className={"menu " + (menuOpen && "active")} onClick={() => setMenuOpen(false)}>
         <ul>
             <li>
-                <a href="#intro">Home</a>
+                <span onClick={scrollToHome}>Home</span>
             </li>
             <li>
-                <a href="#portfolio">Portfolio</a>
+                <span onClick={scrollToProjects}>Projects</span>
             </li>
             <li>
-                <a href="#contact">Contact</a>
-            </li>
+                <span href="#contact">Contact</span>
+            </li>   
         </ul>
     </div>
   )
