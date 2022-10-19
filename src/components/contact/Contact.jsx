@@ -11,6 +11,11 @@ export default function Contact() {
       <div className="contactEmail">
         <a className="bigEmail" href="mailto:nicolodaddabbo@gmail.com">nicolodaddabbo<span className="at">@</span>gmail<span className="dot">.</span>com</a>
       </div>
+      <div className="footerContainer">
+        <div className="footerCredits">
+          Build and Developed by <a href="https://nicolodaddabbo.github.io/">Nicolò D'Addabbo</a>
+        </div>
+      </div>
     </div>
   )
 }
