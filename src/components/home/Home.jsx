@@ -68,7 +68,7 @@ export default function Home() {
         <ParallaxLayer offset={2.5} speed={1} factor={1.5 + scaleFactor} className="portfolioSection">
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5 + scaleFactor} speed={0.5} factor={1.5} className="contactSection">
+        <ParallaxLayer offset={3.5 + scaleFactor} speed={0.5} factor={1.2} className="contactSection">
           <Contact />
         </ParallaxLayer>
       </Parallax>
