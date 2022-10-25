@@ -46,8 +46,6 @@ export default function Projects() {
         }
     }
 
-    const bullet1 = (index == 0) ? "bullet active" : "bullet"
-
     return (
         <div id='projects'>
             <h1 className='mainTitle'>PROGETTI</h1>
@@ -55,9 +53,6 @@ export default function Projects() {
                 { projects.map((project, id) => (
                     <div key={id} className={(index === id) ? "bullet active" : "bullet"} onClick={() => setIndex(id)}></div>
                 ))}
-                {/* <div className={(index === 0) ? "bullet active" : "bullet"} onClick={() => setIndex(0)}></div>
-                <div className={(index === 1) ? "bullet active" : "bullet"} onClick={() => setIndex(1)}></div>
-                <div className={(index === 2) ? "bullet active" : "bullet"} onClick={() => setIndex(2)}></div> */}
             </div>
             <SwipeableViews enableMouseEvents index={index} onChangeIndex={(index) => setIndex(index)}>
                 { projects.map((project, id) => (

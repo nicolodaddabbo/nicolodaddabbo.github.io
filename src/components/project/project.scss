@@ -67,6 +67,9 @@
 
 @media only screen and (max-width: 600px) {
     .projectWrapper {
+        align-items: flex-start;
+        margin-top: 5%;
+        height: 220vh;
         .textSection {
             width: 90%;
         }
