@@ -38,7 +38,7 @@ export default function SingleProject({ handleClose, show, index, project }) {
                     {project.title}
                 </h1>
                 <div className='modalBody'>
-                    {project.body}
+                    <span dangerouslySetInnerHTML={{ __html: project.body }}></span>
                 </div>
                 <div className='modalClose' onClick={handleClose}>
                     <CloseIcon style={{fontSize : '50px'}}/>    
@@ -46,11 +46,11 @@ export default function SingleProject({ handleClose, show, index, project }) {
                 <div className="slider">
                     <SwipeableViews enableMouseEvents index={slideIndex}>
                         {project.images.map((imgUrl, id) => (
-                            <img
+                            <div
                                 key={id}
-                                src={imgUrl}
-                                alt={"project"}
-                            />
+                                style={{backgroundImage : `url(${imgUrl})`}}
+                                className="slide"
+                            ></div>
                         ))}
                     </SwipeableViews>
                     <ArrowCircleRightOutlinedIcon className='rightArrow' onClick={moveSlideForward} />

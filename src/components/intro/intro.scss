@@ -49,6 +49,15 @@
     width: 50%;
     font-size: $p-size;
 
+    a {
+        color: $color-3;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
     &.right {
         padding-top: 0%;
         padding-right: 5%;

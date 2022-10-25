@@ -64,7 +64,7 @@ export default function HeroHome() {
             <div className="left">
                 <div className="imgContainer">
                     <div className="imgCircle">
-                        <img src="assets/logo_sito_1.png" alt="Nicolò D'Addabbo" />
+                        <img src="assets/logo_bianco.svg" alt="Nicolò D'Addabbo" />
                     </div>
                 </div>
             </div>
