@@ -82,13 +82,17 @@
             justify-content: center;
 
             .imgCircle {
-                width: 450px;
-                height: 450px;
+                width: 40vw;
+                height: 40vw;
                 background-color: $color-3;
                 border-radius: 50%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+
+                img {
+                    height: 30vw;
+                }
             }
         }
 
@@ -108,7 +112,7 @@
 
             h1 {
                 font-family: 'Poppins';
-                font-size: 80px;
+                font-size: 7vw;
                 font-weight: 700;
                 line-height: 1;
                 overflow: hidden;
@@ -193,7 +197,20 @@
         flex-direction: column;
 
         .left {
-            display: none;
+            position: absolute;
+            top: 50px;
+            .imgContainer {
+                width: 100vw;
+                justify-content: left;
+                transform: rotate(25deg);
+
+                .imgCircle {
+                    background-color: transparent;
+                    img {
+                        height: 20vh;
+                    }
+                }
+            }
         }
 
         .right {
@@ -204,7 +221,7 @@
             .wrapper {
 
                 h1 {
-                    font-size: 80px;
+                    font-size: 12vw;
                 }
 
                 h3 {
@@ -215,6 +232,7 @@
             .social {
                 display: flex;
                 justify-content: center;
+                margin-left: -8% !important;
             }
         }
     }
