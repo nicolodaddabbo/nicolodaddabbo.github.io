@@ -22,7 +22,7 @@ export default function Project({ project: { title, intro, body, images }, index
           <p className='projectIntro'>{intro}</p>
           <div className="buttonScopri">
             <Button
-              text="SCOPRI"
+              text="DISCOVER"
               onClick={showModal}
             />
           </div>
