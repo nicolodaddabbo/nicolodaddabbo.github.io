@@ -44,6 +44,7 @@ export default function SingleProject({ handleClose, show, index, project }) {
                     <CloseIcon style={{fontSize : '50px'}}/>    
                 </div>
                 <div className="slider">
+                    <div className='mobileSwipe'><img src='assets/swipe-to-right.svg'/></div>
                     <SwipeableViews enableMouseEvents index={slideIndex}>
                         {project.images.map((imgUrl, id) => (
                             <div
