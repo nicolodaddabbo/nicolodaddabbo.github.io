@@ -7,7 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import CallIcon from '@material-ui/icons/Call';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { init } from "ityped";
 
 export default function HeroHome() {
@@ -19,6 +19,8 @@ export default function HeroHome() {
             strings: ["Full Stack Developer", "Web Designer", "Web Developer", "Software Developer"],
         })
     }, [])
+
+    const [isLoaded, setIsLoaded] = useState(false)
     return (
         // <div id="heroHome">
         //     <div className="heroTitle-container">
@@ -64,7 +66,12 @@ export default function HeroHome() {
             <div className="left">
                 <div className="imgContainer">
                     <div className="imgCircle">
-                        <img src="assets/logo_bianco.svg" alt="Nicolò D'Addabbo" />
+                        <img 
+                            style={this.isLoaded ? {} : {display : 'none'}}
+                            src="assets/logo_bianco.svg" 
+                            alt="Nicolò D'Addabbo"
+                            onLoad={setIsLoaded(true)}
+                            />
                     </div>
                 </div>
             </div>
