@@ -67,10 +67,10 @@ export default function HeroHome() {
                 <div className="imgContainer">
                     <div className="imgCircle">
                         <img 
-                            style={this.isLoaded ? {} : {display : 'none'}}
+                            style={isLoaded ? {} : {display : 'none'}}
                             src="assets/logo_bianco.svg" 
                             alt="Nicolò D'Addabbo"
-                            onLoad={setIsLoaded(true)}
+                            onLoad={() => setIsLoaded(true)}
                             />
                     </div>
                 </div>
