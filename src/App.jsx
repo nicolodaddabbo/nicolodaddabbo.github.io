@@ -11,7 +11,7 @@ export default function App() {
         <title>Nicolò D'Addabbo Portfolio</title>
         <meta
           name="description"
-          content="Freelance Web Developer Portfolio based in Rimini - Italia"
+          content="Freelance Web Developer based in Rimini - Italia"
         />
         <meta
           name="keywords"
