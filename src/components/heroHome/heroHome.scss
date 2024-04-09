@@ -125,6 +125,21 @@
                 }
             }
 
+            h2 {
+                a {
+                    color: $color-1;
+                    text-decoration: underline;
+                    text-decoration-color: $color-3;
+                    text-decoration-thickness: 0.1em;
+                }
+
+                a:hover {
+                    cursor: pointer;
+                    color: $color-3;
+                    text-decoration-color: $color-1;
+                }
+            }
+
             h3 {
                 font-size: x-large;
 

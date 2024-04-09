@@ -2,6 +2,7 @@ import "./home.scss"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import HeroHome from "../heroHome/HeroHome";
 import Intro from "../intro/Intro";
+import TimelineSection from "../timelineSection/TimelineSection";
 import Projects from "../projects/Projects";
 import Navbar from "../navbar/Navbar";
 import Menu from "../menu/Menu";
@@ -65,10 +66,13 @@ export default function Home() {
         <ParallaxLayer offset={1} speed={0.4} factor={2} className="introSection">
           <Intro />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5} speed={1} factor={1.5 + scaleFactor} className="portfolioSection">
+        <ParallaxLayer offset={2.5} speed={0.4} factor={1} className="timelineSection">
+          <TimelineSection />
+        </ParallaxLayer>
+        <ParallaxLayer offset={3.5} speed={1} factor={1.5 + scaleFactor} className="portfolioSection">
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5 + scaleFactor} speed={0.5} factor={1.2} className="contactSection">
+        <ParallaxLayer offset={4.5 + scaleFactor} speed={0.5} factor={1.2} className="contactSection">
           <Contact />
         </ParallaxLayer>
       </Parallax>
