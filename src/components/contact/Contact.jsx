@@ -27,9 +27,6 @@ export default function Contact() {
         <a href="mailto:nicolodaddabbo@gmail.com">
           <MailOutlineIcon style={{ fontSize: "50px" }} />
         </a>
-        <a href="tel:+393273936148">
-          <CallIcon style={{ fontSize: "50px" }} />
-        </a>
         <a href="https://github.com/nicolodaddabbo">
           <GitHubIcon style={{ fontSize: "50px" }} />
         </a>

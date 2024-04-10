@@ -11,21 +11,6 @@ export default function Projects() {
 
     const projects = [
         {
-            title: "Freelance Web Developer",
-            intro: `I am currently realizing websites on commission, I've started this small activity in December 2021.`,
-            body: `I am currently realizing websites on commission, I've started this small activity in December 2021. All
-            of my clients are word-of-mouth but I want to start investing in this activity, opening my own company, to keep
-            financing my studies.<br/>
-            I realized different websites such as:
-            <a href="https://wildrockexperience.com/" target="_blank">Wild Rock Experience</a>
-            and <a href="https://www.ilmandorlo.org/" target="_blank">Kumu Education</a>.
-            <br/>
-            Useful experience that has strengthened my front-end skills and also my communication, 
-            sales and work time management skills.
-            `,
-            images: ['assets/logo_intero.svg', 'assets/logo_intero_rosso.svg']
-        },
-        {
             title: "Paganello's Schedule",
             intro: `I realized a Web App that displays the games schedule for the biggest Beach Ultimate 
             Frisbee tournament in the World: Paganello. I built it using: ReactJS, NextJS and Google Sheets API`,
@@ -43,17 +28,13 @@ export default function Projects() {
             images: ['assets/paganello_preview.png', 'assets/paganello_demo.png']
         },
         {
-            title: "PiazzaHR",
-            intro: `I worked as Web Developer for the Piazza Hotels & Residences group in Rimini`,
-            body: `I designed, developed and maintained numerous websites for the <a target="_blank" href="https://piazzahr.com">Piazza Hotels & Residences</a> group. <br/>
-            My main task was to brand and develop 15 websites, one for each Residence of the group, for example: 
-            <a target="_blank" href="https://residencenautic.com">Residence Nautic</a>, 
-            <a target="_blank" href="https://tensuite.it">Residence Ten Suite</a>, 
-            <a target="_blank" href="https://hotelducalerimini.it">Hotel Ducale</a> and many others. <br/>
-            Tanks to this experience I improved my Frontend Development Skills, but I also learned 
-            to use tools like Inkscape and GIMP for the creation of logos and graphics, and to use Google Tag Manager and Google Analytics efficiently.
-            `,
-            images: ['assets/logo_nautic.svg', 'assets/logo_tensuite.svg']
+            title: "Dracula APP",
+            intro: `Realized for the event bitsxlaMarató 2023: Hackathon Barcelona. Mobile App that helps women tracks their period blood losses to prevent diseases.`,
+            body: `– Employed React Native for the app’s front-end and relied on SQLite for data storage, prioritizing development
+            speed over a full back-end, given the project’s time constraints.<br/>
+            – The app employed computer vision to assess the blood volume in the protective device using a simple image.<br/>
+            Git Repo: <a target="_blank" href="https://github.com/nicolodaddabbo/dracula">here</a>.`,
+            images: ['assets/bitsxlamarato_full.png']
         }
     ]
 

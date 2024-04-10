@@ -24,15 +24,36 @@
 
 .timeline {
     width: 100%;
+    .today {
+        font-weight: bolder;
+        border: 2px solid $color-3;
+        border-radius: 20px;
+        padding: 3px;
+    }
     .timelineContent {
         display: flex;
         flex-direction: column;
+        padding-bottom: 30px;
+        a {
+            text-decoration: underline;
+            text-decoration-color: $color-3;
+            color: $color-2;
+        }
         .description {
             font-size: $p-size;
+        }
+        .info {
+            font-size: $small-text-size;
         }
     }
     img {
         width: 80px;
         height: 80px;
     }
+}
+
+.dottedLine {
+    width: 1px;
+    border: 1px dashed #bdbdbd;
+    height: 40px;
 }

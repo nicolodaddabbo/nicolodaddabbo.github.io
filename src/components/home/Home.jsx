@@ -40,11 +40,11 @@ export default function Home() {
   }
 
   const scrollToProjects = () => {
-    ref.current.scrollTo(2.2)
+    ref.current.scrollTo(4)
   }
 
   const scrollToContact = () => {
-    ref.current.scrollTo(4)
+    ref.current.scrollTo(5.5)
   }
 
   const scaleFactor = isMobile ? 1 : 0
@@ -59,20 +59,20 @@ export default function Home() {
         scrollToProjects={scrollToProjects}
         scrollToContact={scrollToContact}
       />
-      <Parallax pages={4.5 + scaleFactor} ref={ref}>
+      <Parallax pages={6 + scaleFactor + (isMobile ? 1.5 : 0)} ref={ref}>
         <ParallaxLayer speed={1} className="heroSection">
           <HeroHome />
         </ParallaxLayer>
-        <ParallaxLayer offset={1} speed={0.4} factor={2} className="introSection">
+        <ParallaxLayer offset={1} speed={0.4} factor={3} className="introSection">
           <Intro />
         </ParallaxLayer>
-        <ParallaxLayer offset={2.5} speed={0.4} factor={1} className="timelineSection">
+        <ParallaxLayer offset={3 + scaleFactor} speed={0.2} factor={1 + scaleFactor} className="timelineSection">
           <TimelineSection />
         </ParallaxLayer>
-        <ParallaxLayer offset={3.5} speed={1} factor={1.5 + scaleFactor} className="portfolioSection">
+        <ParallaxLayer offset={4 + scaleFactor + (isMobile ? 1.5 : 0)} speed={1} factor={1 + scaleFactor} className="portfolioSection">
           <Projects />
         </ParallaxLayer>
-        <ParallaxLayer offset={4.5 + scaleFactor} speed={0.5} factor={1.2} className="contactSection">
+        <ParallaxLayer offset={5 + scaleFactor + (isMobile ? 1.5 : 0)} speed={0.5} factor={1.2} className="contactSection">
           <Contact />
         </ParallaxLayer>
       </Parallax>

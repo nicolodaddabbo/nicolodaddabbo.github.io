@@ -4,8 +4,17 @@
     color: $color-2;
 }
 
+.spaced {
+    margin-top: 10%;
+}
+
 .introHeader {
     display: flex;
+
+    &.center {
+        justify-content: center;
+        text-align: center;
+    }
 
     &.right {
         justify-content: right;
@@ -71,6 +80,58 @@
     }
 }
 
+.skillsHeader {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: $h1-size;
+    color: $color-3;
+}
+
+.skillsContainer {
+    width: 100%;
+}
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px;
+    width: 50%;
+    
+    div {
+        width: 100%;
+    }
+
+    &.left {
+        padding-left: 50px;
+        float: left;
+        clear: both;
+        border-bottom: 1px solid $color-3;
+    }
+
+    &.right {
+        padding-right: 50px;
+        float: right;
+        clear: both;
+        text-align: right;
+        justify-content: right;
+        align-items: flex-end;
+        border-bottom: 1px solid $color-3;
+
+    }
+
+    h3 {
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 35px;
+        color: $color-2;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .introHeader {
         padding-bottom: 15%;
@@ -108,7 +169,8 @@
         width: 100%;
         font-size: $p-size;
 
-        &.right, &.left {
+        &.right,
+        &.left {
             padding-top: 5%;
             padding-right: 5%;
             padding-left: 5%;

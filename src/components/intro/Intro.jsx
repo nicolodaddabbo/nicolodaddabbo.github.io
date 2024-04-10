@@ -33,6 +33,31 @@ export default function Intro() {
           <img src="assets/coding.svg" alt="Nicolò D'Addabbo" />
         </div>
       </div>
+      <div className="skillsHeader center spaced">
+        <h1>
+          Skills
+        </h1>
+      </div>
+      <div className="skillsContainer">
+        <div className="skillsSection left">
+          <h3>Languages</h3>
+          <div className="introText">
+            C, C#, Java, JavaScript, TypeScript, Python, Bash Scripting, PHP, SQL, HTML, XML, CSS
+          </div>
+        </div>
+        <div className="skillsSection right">
+          <h3>Libraries</h3>
+          <div className="introText">
+            ReactJs, OpenMP, NumPy, P5js, scikit-learn, pandas
+          </div>
+        </div>
+        <div className="skillsSection left">
+          <h3>Frameworks</h3>
+          <div className="introText">
+            React Native, Spring Boot, WordPress, Magento 2, NodeJS
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
