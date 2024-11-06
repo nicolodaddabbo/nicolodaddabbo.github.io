@@ -89,9 +89,26 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 
-                img {
-                    height: 30vw;
+                &:hover {
+                    transform: scale(1.05); // Scale up on hover for effect
+                    transition: transform 0.3s ease;
+                }
+
+                .imgCircleContent {
+                    // Style for the "ND" text
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 20vw;
+                    font-weight: 900;
+                    color: $color-1;
+                    text-transform: uppercase;
+
+                    // Optional gradient effect for a premium look
+                    background: linear-gradient(135deg, $color-2, $color-3);
+                    background-clip: text;
+                    color: transparent; // Text takes the gradient
+
                 }
             }
         }
@@ -121,11 +138,20 @@
                     font-family: inherit;
                     font-size: inherit;
                     font-weight: inherit;
-                    color: $color-1;
+                    font-size: 9vw;
+                    color: transparent;
+                    background: linear-gradient(135deg, $color-1, $color-3);
+                    background-clip: text;
+
+                    &:hover {
+                        background: linear-gradient(135deg, $color-3, $color-1);
+                        background-clip: text;
+                    }
                 }
             }
 
             h2 {
+                padding: 0.2em 0;
                 a {
                     color: $color-1;
                     text-decoration: underline;
@@ -214,17 +240,11 @@
         .left {
             position: absolute;
             top: 50px;
+
             .imgContainer {
                 width: 100vw;
                 justify-content: left;
                 transform: rotate(25deg);
-
-                .imgCircle {
-                    background-color: transparent;
-                    img {
-                        height: 20vh;
-                    }
-                }
             }
         }
 
@@ -237,11 +257,11 @@
 
                 h1 {
                     font-size: 12vw;
+                    span {
+                        font-size: 14vw;
+                    }
                 }
 
-                h3 {
-                    font-size: large;
-                }
             }
 
             .social {

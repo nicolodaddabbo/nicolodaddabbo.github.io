@@ -25,12 +25,9 @@ export default function HeroHome() {
             <div className="left">
                 <div className="imgContainer">
                     <div className="imgCircle">
-                        <img 
-                            style={isLoaded ? {} : {display : 'none'}}
-                            src="assets/logo_bianco.svg" 
-                            alt="Nicolò D'Addabbo"
-                            onLoad={() => setIsLoaded(true)}
-                            />
+                        <div className="imgCircleContent">
+                            ND
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,7 +35,9 @@ export default function HeroHome() {
                 <div className="wrapper">
                     <h2>Ciao, I'm</h2>
                     <h1><span>N</span>icolò <span>D</span>'Addabbo</h1>
-                    <h2>Junior Software Developer @ <a target="_blank" href="https://www.lunapartner.it">Luna Partner</a></h2>
+                    <h2>Full Stack Developer @ <a target="_blank" href="https://www.lunapartner.it">Luna Partner</a></h2>
+                    <h2>MSc Computer Science and Engineering @ <a target="_blank" href="https://www.polimi.it">Politecnico di Milano</a></h2>
+                    <h2>BSc Computer Science and Engineering @ <a target="_blank" href="https://www.unibo.it/">Università di Bologna</a></h2>
                     <h3>Freelance <span ref={textRef}></span></h3>
                     <div className="social">
                         <a href="https://www.linkedin.com/in/nicolodaddabbo/">
