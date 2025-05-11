@@ -1,11 +1,42 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+	<article class="pt-2 sm:pt-10">
+		<section class="py-6">
+			<div class="flex flex-row items-center gap-2 md:gap-4">
+				<Image
+					src="/me.jpeg"
+					width="70"
+					height="70"
+					alt="avatar"
+					class="rounded-full my-4"
+				/>
+				<h1 class="text-3xl md:text-4xl font-extrabold">
+					Nicolò D&apos;Addabbo
+				</h1>
+			</div>
+			<p class="mt-4">Software Engineer, 22. Berlin-based.</p>
+			<p class="mt-4">
+				Currently interning at <a href="https://tesla.com">Tesla</a> in Berlin.
+			</p>
+			<p class="mt-4">
+				I studied Computer Science and Engineering between <a
+					href="https://polimi.it">Milan</a
+				>, <a href="https://www.upc.edu">Barcelona</a>, and <a
+					href="https://www.unibo.it">Bologna</a
+				>, and I&apos;ve been building things since high school — from
+				freelance websites to data-driven mobile apps. I care about
+				clean architecture, smart interfaces, and building tech that
+				people actually need.
+			</p>
+			<p class="mt-4">
+				I&apos;ve been a musician, Ultimate Frisbee player, and event
+				organizer.
+			</p>
+		</section>
+		<section class="py-6"></section>
+	</article>
 </Layout>
