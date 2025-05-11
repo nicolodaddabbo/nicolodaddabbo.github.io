@@ -1,1 +1,49 @@
 @import "tailwindcss";
+
+:root {
+    --background: #ffffff;
+    --accent: #f43731;
+    --foreground: #000000;
+}
+
+@theme {
+    --font-display: "Satoshi", "sans-serif";
+    --color-background: var(--background);
+    --color-accent: var(--accent);
+    --color-foreground: var(--foreground);
+}
+
+@layer base {
+    body {
+        @apply bg-background text-foreground;
+    }
+
+    ::selection {
+        background: var(--accent);
+        color: var(--background);
+        text-shadow: none;
+    }
+
+    ::-moz-selection {
+        background: var(--accent);
+        color: var(--background);
+        text-shadow: none;
+    }
+}
+
+@layer components {
+    .link {
+        font-weight: bold;
+        color: var(--accent);
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 4px;
+        transition: all 0.1s ease;
+
+    }
+
+    .link:hover {
+        color: var(--foreground);
+        text-decoration-thickness: 2px;
+    }
+}

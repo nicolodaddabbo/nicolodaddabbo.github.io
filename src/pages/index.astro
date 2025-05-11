@@ -9,10 +9,11 @@ import Layout from "../layouts/Layout.astro";
 			<div class="flex flex-row items-center gap-2 md:gap-4">
 				<Image
 					src="/me.jpeg"
-					width="70"
-					height="70"
+					width="60"
+					height="60"
 					alt="avatar"
 					class="rounded-full my-4"
+					loading="eager"
 				/>
 				<h1 class="text-3xl md:text-4xl font-extrabold">
 					Nicolò D&apos;Addabbo
@@ -20,12 +21,16 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 			<p class="mt-4">Software Engineer, 22. Berlin-based.</p>
 			<p class="mt-4">
-				Currently interning at <a href="https://tesla.com">Tesla</a> in Berlin.
+				Currently interning at <a class="link" href="https://tesla.com"
+					>Tesla</a
+				> in Berlin.
 			</p>
 			<p class="mt-4">
 				I studied Computer Science and Engineering between <a
+					class="link"
 					href="https://polimi.it">Milan</a
-				>, <a href="https://www.upc.edu">Barcelona</a>, and <a
+				>, <a class="link" href="https://www.upc.edu">Barcelona</a>, and <a
+					class="link"
 					href="https://www.unibo.it">Bologna</a
 				>, and I&apos;ve been building things since high school — from
 				freelance websites to data-driven mobile apps. I care about
