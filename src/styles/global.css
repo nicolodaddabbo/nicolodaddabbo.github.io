@@ -6,11 +6,11 @@
     --foreground: #000000;
 }
 
-@theme {
-    --font-display: "Satoshi", "sans-serif";
+@theme inline {
     --color-background: var(--background);
     --color-accent: var(--accent);
     --color-foreground: var(--foreground);
+    --font-sans: var(--font-work-sans)
 }
 
 @layer base {
