@@ -8,6 +8,14 @@ import "../styles/global.css";
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<Font cssVariable="--font-work-sans" preload />
+		<title>Nicolò D'Addabbo</title>
+		<meta
+			name="description"
+			content="Nicolò D'Addabbo's personal website."
+		/>
+		<!-- Icons -->
 		<link rel="icon" href="/favicon.ico" />
 		<link
 			rel="icon"
@@ -35,9 +43,14 @@ import "../styles/global.css";
 			href="/android-chrome-512x512.png"
 		/>
 		<link rel="manifest" href="/site.webmanifest" />
-		<meta name="generator" content={Astro.generator} />
-		<Font cssVariable="--font-work-sans" preload />
-		<title>Nicolò D'Addabbo</title>
+		<!-- Twitter tags -->
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@nicolodaddabbo" />
+		<meta name="twitter:title" content="Nicolò D'Addabbo" />
+		<meta
+			name="twitter:description"
+			content="Nicolò D'Addabbo's personal website."
+		/>
 	</head>
 	<body>
 		<main class="max-w-3xl mx-auto p-4">
