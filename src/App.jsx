@@ -5,24 +5,22 @@ import { BrowserRouter } from "react-router-dom";
 import Helmet from "react-helmet";
 
 export default function App() {
-  return(
+  return (
     <BrowserRouter>
       <Helmet>
-        <title>Nicolò D'Addabbo Portfolio</title>
         <meta
           name="description"
-          content="Full Stack Developer based in Milano - Italia"
+          content="Software Engineer based in Berlin - Germany"
         />
+        <title>Redirecting to https://nicolod.com/</title>
+        <meta http-equiv="refresh" content="0; URL=https://nicolod.com/" />
+        <link rel="canonical" href="https://nicolod.com/" />
         <meta
-          name="keywords"
-          content="Sito Web, Rimini, Web Developer, Freelance, Developer, Full Stack, Portfolio"
-        />
-        <meta 
-          http-equiv="Content-Language" 
-          content="en, it" 
+          http-equiv="Content-Language"
+          content="en, it"
         />
       </Helmet>
-      <Home/>   
+      <Home />
     </BrowserRouter>
   )
 }
